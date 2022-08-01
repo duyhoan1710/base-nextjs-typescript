@@ -1,13 +1,13 @@
 import { useRouter } from 'next/router';
 
 import { Meta } from '@/layouts/Meta';
-import { Main } from '@/templates/Main';
+import { Layout } from '@/layouts/Layout';
 
 const Index = () => {
   const router = useRouter();
 
   return (
-    <Main
+    <Layout
       meta={
         <Meta
           title="Next.js Boilerplate Presentation"
@@ -179,7 +179,7 @@ const Index = () => {
         </a>{' '}
         on our website to support this project.
       </p>
-    </Main>
+    </Layout>
   );
 };
 
