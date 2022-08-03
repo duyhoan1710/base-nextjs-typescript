@@ -9,13 +9,13 @@ type ILayoutProps = {
 };
 
 const Layout = (props: ILayoutProps) => (
-  <div className="w-full px-1 text-gray-700 antialiased">
+  <div>
     {props.meta}
 
-    <div className="mx-auto max-w-screen-md">
-      <Header />
+    <div className="flex flex-col min-h-[100vh]">
+      {/* <Header /> */}
 
-      <div className="content py-5 text-xl">{props.children}</div>
+      <div className="flex-grow">{props.children}</div>
 
       <Footer />
     </div>
