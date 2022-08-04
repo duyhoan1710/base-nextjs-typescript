@@ -16,7 +16,12 @@ module.exports = {
     },
     extend: {
       colors: {
-        "yellow-base": "#fbf0cd",
+        "yellow-100": "rgb(255, 229, 149, 0.6)",
+        "yellow-base": "#ffe595",
+        "yellow-text": "#ffe196",
+        "violet": "#f9f8f8",
+        "black-500": "#00000096",
+        red: "#ff4a55",
         gray: {
           ba: "#bababa",
           100: "#f7fafc",
