@@ -2,10 +2,10 @@ import { Container } from "./Container";
 
 export const Footer = () => {
   return (
-    <div className="md:py-[80px]">
+    <div className="py-[80px]">
       <Container>
-        <div className="flex justify-between">
-          <div className="md:w-2/5">
+        <div className="flex justify-between flex-wrap">
+          <div className="w-full md:w-2/5 mb-10">
             <h2 className="text-3xl font-medium h-[50px]">Lyme</h2>
             <div className="text-gray-ba">
               when an unknown printer took a galley of type and scrambled it to
@@ -50,6 +50,16 @@ export const Footer = () => {
               <li>Price Promises</li>
             </ul>
           </div>
+        </div>
+
+        <div className="text-gray-ba text-center mt-10">
+          Sold and fulfilled by FastSpring - an authorized reseller. Bright
+          Market (dba FastSpring), 801 Garden St., Santa Barbara, CA 93101, is
+          the authorized reseller of our products and services on TermsFeed.com
+        </div>
+
+        <div className="text-gray-ba text-center">
+          @Copyright by hoan.nguyenduy
         </div>
       </Container>
     </div>

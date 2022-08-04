@@ -1,4 +1,4 @@
-import { EStorageKey } from "./../enums/index";
+import { EStorageKey } from "../enums/index";
 
 export const setItem = (key: EStorageKey, value: any) => {
     window.localStorage.setItem(key, value);

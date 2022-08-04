@@ -52,11 +52,15 @@ const Index = () => {
         <Container>
           <div className="flex flex-col justify-between w-3/5 md:w-1/2 lg:w-1/3 absolute top-[50%] -translate-y-1/2">
             <div className="flex flex-col justify-between">
-              <div className="text-gray-600 text-2xl mb-4">SUPPER SUSTAINABLE</div>
+              <div className="text-gray-600 text-2xl mb-4">
+                SUPPER SUSTAINABLE
+              </div>
               <div className="text-4xl leading-8 md:text-5xl md:leading-[46px] lg:text-6xl lg:leading-[56px] mb-5">
                 Girls from around the world
               </div>
-              <div className="mb-12">Premium CBD delivered directly to your doorstep</div>
+              <div className="mb-12">
+                Premium CBD delivered directly to your doorstep
+              </div>
             </div>
 
             <button className="bg-white text-black text-lg font-medium px-5 py-2 w-fit">
@@ -69,11 +73,11 @@ const Index = () => {
       <div>
         <Container>
           <div className="lg:py-24 py-16 ">
-            <div className="text-center  lg:px-12  md:px-20">
+            <div className="text-center lg:px-12 md:px-20 lg:mb-20 mb-16">
               <div className="text-yellow-text mb-2 lg:text-xl text-lg">
                 STIMMA SUNDREAM
               </div>
-              <div className="lg:text-4xl lg:leading-10 lg:mb-20 md:mb-16 text-3xl leading-8">
+              <div className="lg:text-4xl lg:leading-10 text-3xl leading-8">
                 "Contrary to popular belief, Lorem Ipsum is not simply random
                 text. It has roots in a piece of classical Latin literature from
                 45 BC, making it over 2000 years old."
@@ -81,8 +85,8 @@ const Index = () => {
             </div>
 
             <div>
-              <div className="flex justify-between">
-                <div className="w-[49%] lg:h-72 md:h-64 relative">
+              <div className="md:flex md:justify-between">
+                <div className="w-full mb-5 md:w-[49%] lg:h-72 h-64 relative">
                   <Image src={category1Image} layout="fill" objectFit="cover" />
                   <div className="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-t from-stone-500 to-transparent" />
                   <div className="absolute top-[56%] left-[10%]">
@@ -91,7 +95,7 @@ const Index = () => {
                   </div>
                 </div>
 
-                <div className="w-[49%] lg:h-72 md:h-64 relative">
+                <div className="w-full mb-5 md:w-[49%] lg:h-72 h-64 relative">
                   <Image src={category2Image} layout="fill" objectFit="cover" />
                   <div className="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-t from-stone-500 to-transparent" />
                   <div className="absolute top-[56%] left-[10%]">
@@ -101,8 +105,8 @@ const Index = () => {
                 </div>
               </div>
 
-              <div className="flex justify-between mt-5">
-                <div className="w-[64%] lg:h-72 md:h-64 relative">
+              <div className="md:flex md:justify-between">
+                <div className="w-full mb-5 md:w-[64%] lg:h-72 h-64 relative">
                   <Image src={category3Image} layout="fill" objectFit="cover" />
                   <div className="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-t from-stone-500 to-transparent" />
                   <div className="absolute top-[56%] left-[10%]">
@@ -111,7 +115,7 @@ const Index = () => {
                   </div>
                 </div>
 
-                <div className="w-[34%] lg:h-72 md:h-64 relative">
+                <div className="w-full mb-5 md:w-[34%] lg:h-72 h-64 relative">
                   <Image src={category4Image} layout="fill" objectFit="cover" />
                   <div className="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-t from-stone-500 to-transparent" />
                   <div className="absolute top-[56%] left-[10%]">
@@ -125,7 +129,7 @@ const Index = () => {
         </Container>
       </div>
 
-      <div className="lg:py-24 md:py-16 bg-violet">
+      <div className="lg:py-24 py-16 bg-violet">
         <Container>
           <div className="text-center mb-16">
             <div className="text-yellow-text mb-2 lg:text-xl md:text-lg">
@@ -139,8 +143,8 @@ const Index = () => {
           </div>
 
           <div className="flex flex-wrap -mx-2">
-            <div className="w-[25%] px-3 pb-6 mb-8 hover:shadow-xl">
-              <div className="lg:h-[24rem] md:h-72 ">
+            <div className="w-[50%] md:w-[25%] px-3 pb-6 mb-8 hover:shadow-xl">
+              <div className="lg:h-[24rem] h-72 ">
                 <div className="relative w-full h-full">
                   <Image src={product1Image} layout="fill" objectFit="cover" />
                   <div className="absolute top-4 left-4 px-3 py-1 bg-red text-white font-medium">
@@ -171,8 +175,8 @@ const Index = () => {
               </div>
             </div>
 
-            <div className="w-[25%] px-3 pb-6 mb-8 hover:shadow-xl">
-              <div className="lg:h-[24rem] md:h-72 ">
+            <div className="w-[50%] md:w-[25%] px-3 pb-6 mb-8 hover:shadow-xl">
+              <div className="lg:h-[24rem] h-72 ">
                 <div className="relative w-full h-full">
                   <Image src={product2Image} layout="fill" objectFit="cover" />
 
@@ -204,8 +208,8 @@ const Index = () => {
               </div>
             </div>
 
-            <div className="w-[25%] px-3 pb-6 mb-8 hover:shadow-xl">
-              <div className="lg:h-[24rem] md:h-72 ">
+            <div className="w-[50%] md:w-[25%] px-3 pb-6 mb-8 hover:shadow-xl">
+              <div className="lg:h-[24rem] h-72 ">
                 <div className="relative w-full h-full">
                   <Image src={product3Image} layout="fill" objectFit="cover" />
 
@@ -237,8 +241,8 @@ const Index = () => {
               </div>
             </div>
 
-            <div className="w-[25%] px-3 pb-6 mb-8 hover:shadow-xl">
-              <div className="lg:h-[24rem] md:h-72 ">
+            <div className="w-[50%] md:w-[25%] px-3 pb-6 mb-8 hover:shadow-xl">
+              <div className="lg:h-[24rem] h-72 ">
                 <div className="relative w-full h-full">
                   <Image src={product4Image} layout="fill" objectFit="cover" />
 
@@ -270,8 +274,8 @@ const Index = () => {
               </div>
             </div>
 
-            <div className="w-[25%] px-3 pb-6 mb-8 hover:shadow-xl">
-              <div className="lg:h-[24rem] md:h-72 ">
+            <div className="w-[50%] md:w-[25%] px-3 pb-6 mb-8 hover:shadow-xl">
+              <div className="lg:h-[24rem] h-72 ">
                 <div className="relative w-full h-full">
                   <Image src={product5Image} layout="fill" objectFit="cover" />
 
@@ -303,8 +307,8 @@ const Index = () => {
               </div>
             </div>
 
-            <div className="w-[25%] px-3 pb-6 mb-8 hover:shadow-xl">
-              <div className="lg:h-[24rem] md:h-72 ">
+            <div className="w-[50%] md:w-[25%] px-3 pb-6 mb-8 hover:shadow-xl">
+              <div className="lg:h-[24rem] h-72 ">
                 <div className="relative w-full h-full">
                   <Image src={product6Image} layout="fill" objectFit="cover" />
 
@@ -336,8 +340,8 @@ const Index = () => {
               </div>
             </div>
 
-            <div className="w-[25%] px-3 pb-6 mb-8 hover:shadow-xl">
-              <div className="lg:h-[24rem] md:h-72 ">
+            <div className="w-[50%] md:w-[25%] px-3 pb-6 mb-8 hover:shadow-xl">
+              <div className="lg:h-[24rem] h-72 ">
                 <div className="relative w-full h-full">
                   <Image src={product7Image} layout="fill" objectFit="cover" />
 
@@ -369,8 +373,8 @@ const Index = () => {
               </div>
             </div>
 
-            <div className="w-[25%] px-3 pb-6 mb-8 hover:shadow-xl">
-              <div className="lg:h-[24rem] md:h-72 ">
+            <div className="w-[50%] md:w-[25%] px-3 pb-6 mb-8 hover:shadow-xl">
+              <div className="lg:h-[24rem] h-72 ">
                 <div className="relative w-full h-full">
                   <Image src={product8Image} layout="fill" objectFit="cover" />
 
@@ -405,7 +409,7 @@ const Index = () => {
         </Container>
       </div>
 
-      <div className="lg:py-24 md:py-16">
+      <div className="lg:py-24 py-16">
         <Container>
           <div className="text-center mb-16">
             <div className="text-yellow-text mb-2 lg:text-xl md:text-lg">
@@ -421,50 +425,50 @@ const Index = () => {
           </div>
 
           <div className="flex flex-wrap">
-            <div className="w-1/4 text-3xl text-gray-500 ">
+            <div className="w-1/2 md:w-1/4 text-3xl text-gray-500 ">
               <div className="text-center border-b-2  w-[70%] px-4 py-3 m-auto">
                 LogoIpsum
               </div>
             </div>
 
-            <div className="w-1/4 text-3xl text-gray-500 ">
+            <div className="w-1/2 md:w-1/4 text-3xl text-gray-500 ">
               <div className="text-center border-b-2 w-[70%] px-4 py-3 m-auto">
                 LogoIpsum
               </div>
             </div>
 
-            <div className="w-1/4 text-3xl text-gray-500 ">
+            <div className="w-1/2 md:w-1/4 text-3xl text-gray-500 ">
               <div className="text-center border-b-2 w-[70%] px-4 py-3 m-auto">
                 LogoIpsum
               </div>
             </div>
 
-            <div className="w-1/4 text-3xl text-gray-500 ">
+            <div className="w-1/2 md:w-1/4 text-3xl text-gray-500 ">
               <div className="text-center border-b-2 w-[70%] px-4 py-3 m-auto">
                 LogoIpsum
               </div>
             </div>
 
-            <div className="w-1/4 text-3xl text-gray-500 ">
-              <div className="text-center w-[70%] px-4 py-3 m-auto ">
+            <div className="w-1/2 md:w-1/4 text-3xl text-gray-500 ">
+              <div className="text-center border-b-2 w-[70%] px-4 py-3 m-auto ">
                 LogoIpsum
               </div>
             </div>
 
-            <div className="w-1/4 text-3xl text-gray-500 ">
-              <div className="text-center w-[70%] px-4 py-3 m-auto">
+            <div className="w-1/2 md:w-1/4 text-3xl text-gray-500 ">
+              <div className="text-center border-b-2 w-[70%] px-4 py-3 m-auto">
                 LogoIpsum
               </div>
             </div>
 
-            <div className="w-1/4 text-3xl text-gray-500 ">
-              <div className="text-center w-[70%] px-4 py-3 m-auto">
+            <div className="w-1/2 md:w-1/4 text-3xl text-gray-500 ">
+              <div className="text-center border-b-2 w-[70%] px-4 py-3 m-auto">
                 LogoIpsum
               </div>
             </div>
 
-            <div className="w-1/4 text-3xl text-gray-500 ">
-              <div className="text-center w-[70%] px-4 py-3 m-auto">
+            <div className="w-1/2 md:w-1/4 text-3xl text-gray-500 ">
+              <div className="text-center border-b-2 w-[70%] px-4 py-3 m-auto">
                 LogoIpsum
               </div>
             </div>
@@ -477,8 +481,8 @@ const Index = () => {
         <div className="absolute top-0 bottom-0 right-0 left-0 bg-black opacity-30" />
 
         <div className="absolute text-white text-center left-[50%] -translate-x-1/2 top-[55%] -translate-y-1/2">
-          <div className="mb-2 lg:text-xl md:text-lg">EXCUSIVE</div>
-          <div className="lg:text-4xl md:text-3xl mb-6 font-medium">
+          <div className="mb-2 lg:text-xl text-lg">EXCUSIVE</div>
+          <div className="lg:text-4xl text-3xl mb-6 font-medium">
             Banana Collection
           </div>
           <div className="mb-16">
@@ -491,10 +495,10 @@ const Index = () => {
         </div>
       </div>
 
-      <div className="lg:py-24 md:py-16">
+      <div className="lg:py-24 py-16">
         <Container>
           <div className="text-center mb-16">
-            <div className="text-yellow-text mb-2 lg:text-xl md:text-lg">
+            <div className="text-yellow-text mb-2 lg:text-xl text-lg">
               TRENDING
             </div>
             <div className="text-4xl mb-4 font-medium">Feel balanced</div>
@@ -505,8 +509,8 @@ const Index = () => {
           </div>
 
           <div className="flex flex-wrap -mx-2">
-            <div className="w-[25%] px-3 pb-6 mb-8 hover:shadow-xl">
-              <div className="lg:h-[24rem] md:h-72 ">
+            <div className="w-[50%] md:w-[25%] px-3 pb-6 mb-8 hover:shadow-xl">
+              <div className="lg:h-[24rem] h-72 ">
                 <div className="relative w-full h-full">
                   <Image src={product1Image} layout="fill" objectFit="cover" />
                   <div className="absolute top-4 left-4 px-3 py-1 bg-red text-white font-medium">
@@ -537,8 +541,8 @@ const Index = () => {
               </div>
             </div>
 
-            <div className="w-[25%] px-3 pb-6 mb-8 hover:shadow-xl">
-              <div className="lg:h-[24rem] md:h-72 ">
+            <div className="w-[50%] md:w-[25%] px-3 pb-6 mb-8 hover:shadow-xl">
+              <div className="lg:h-[24rem] h-72 ">
                 <div className="relative w-full h-full">
                   <Image src={product2Image} layout="fill" objectFit="cover" />
 
@@ -570,8 +574,8 @@ const Index = () => {
               </div>
             </div>
 
-            <div className="w-[25%] px-3 pb-6 mb-8 hover:shadow-xl">
-              <div className="lg:h-[24rem] md:h-72 ">
+            <div className="w-[50%] md:w-[25%] px-3 pb-6 mb-8 hover:shadow-xl">
+              <div className="lg:h-[24rem] h-72 ">
                 <div className="relative w-full h-full">
                   <Image src={product3Image} layout="fill" objectFit="cover" />
 
@@ -603,8 +607,8 @@ const Index = () => {
               </div>
             </div>
 
-            <div className="w-[25%] px-3 pb-6 mb-8 hover:shadow-xl">
-              <div className="lg:h-[24rem] md:h-72 ">
+            <div className="w-[50%] md:w-[25%] px-3 pb-6 mb-8 hover:shadow-xl">
+              <div className="lg:h-[24rem] h-72 ">
                 <div className="relative w-full h-full">
                   <Image src={product4Image} layout="fill" objectFit="cover" />
 
@@ -636,8 +640,8 @@ const Index = () => {
               </div>
             </div>
 
-            <div className="w-[25%] px-3 pb-6 mb-8 hover:shadow-xl">
-              <div className="lg:h-[24rem] md:h-72 ">
+            <div className="w-[50%] md:w-[25%] px-3 pb-6 mb-8 hover:shadow-xl">
+              <div className="lg:h-[24rem] h-72 ">
                 <div className="relative w-full h-full">
                   <Image src={product5Image} layout="fill" objectFit="cover" />
 
@@ -669,8 +673,8 @@ const Index = () => {
               </div>
             </div>
 
-            <div className="w-[25%] px-3 pb-6 mb-8 hover:shadow-xl">
-              <div className="lg:h-[24rem] md:h-72 ">
+            <div className="w-[50%] md:w-[25%] px-3 pb-6 mb-8 hover:shadow-xl">
+              <div className="lg:h-[24rem] h-72 ">
                 <div className="relative w-full h-full">
                   <Image src={product6Image} layout="fill" objectFit="cover" />
 
@@ -702,8 +706,8 @@ const Index = () => {
               </div>
             </div>
 
-            <div className="w-[25%] px-3 pb-6 mb-8 hover:shadow-xl">
-              <div className="lg:h-[24rem] md:h-72 ">
+            <div className="w-[50%] md:w-[25%] px-3 pb-6 mb-8 hover:shadow-xl">
+              <div className="lg:h-[24rem] h-72 ">
                 <div className="relative w-full h-full">
                   <Image src={product7Image} layout="fill" objectFit="cover" />
 
@@ -735,8 +739,8 @@ const Index = () => {
               </div>
             </div>
 
-            <div className="w-[25%] px-3 pb-6 mb-8 hover:shadow-xl">
-              <div className="lg:h-[24rem] md:h-72 ">
+            <div className="w-[50%] md:w-[25%] px-3 pb-6 mb-8 hover:shadow-xl">
+              <div className="lg:h-[24rem] h-72 ">
                 <div className="relative w-full h-full">
                   <Image src={product8Image} layout="fill" objectFit="cover" />
 
@@ -771,10 +775,10 @@ const Index = () => {
         </Container>
       </div>
 
-      <div className="lg:py-24 md:py-16 bg-violet">
+      <div className="lg:py-24 py-16 bg-violet">
         <Container>
           <div className="text-center mb-16">
-            <div className="text-yellow-text mb-2 lg:text-xl md:text-lg">
+            <div className="text-yellow-text mb-2 lg:text-xl text-lg">
               BLOG POST
             </div>
             <div className="text-4xl mb-4 font-medium">Latest News</div>
@@ -785,8 +789,8 @@ const Index = () => {
           </div>
 
           <div className="flex flex-wrap -mx-2">
-            <div className="w-[25%] px-3 pb-6 mb-8 hover:shadow-xl">
-              <div className="lg:h-[24rem] md:h-72 ">
+            <div className="w-[50%] md:w-[25%] px-3 pb-6 mb-8 hover:shadow-xl">
+              <div className="lg:h-[24rem] h-72 ">
                 <div className="relative w-full h-full">
                   <Image src={product1Image} layout="fill" objectFit="cover" />
                   <div className="absolute top-4 left-4 px-3 py-1 bg-red text-white font-medium">
@@ -817,8 +821,8 @@ const Index = () => {
               </div>
             </div>
 
-            <div className="w-[25%] px-3 pb-6 mb-8 hover:shadow-xl">
-              <div className="lg:h-[24rem] md:h-72 ">
+            <div className="w-[50%] md:w-[25%] px-3 pb-6 mb-8 hover:shadow-xl">
+              <div className="lg:h-[24rem] h-72 ">
                 <div className="relative w-full h-full">
                   <Image src={product2Image} layout="fill" objectFit="cover" />
 
@@ -850,8 +854,8 @@ const Index = () => {
               </div>
             </div>
 
-            <div className="w-[25%] px-3 pb-6 mb-8 hover:shadow-xl">
-              <div className="lg:h-[24rem] md:h-72 ">
+            <div className="w-[50%] md:w-[25%] px-3 pb-6 mb-8 hover:shadow-xl">
+              <div className="lg:h-[24rem] h-72 ">
                 <div className="relative w-full h-full">
                   <Image src={product3Image} layout="fill" objectFit="cover" />
 
@@ -883,8 +887,8 @@ const Index = () => {
               </div>
             </div>
 
-            <div className="w-[25%] px-3 pb-6 mb-8 hover:shadow-xl">
-              <div className="lg:h-[24rem] md:h-72 ">
+            <div className="w-[50%] md:w-[25%] px-3 pb-6 mb-8 hover:shadow-xl">
+              <div className="lg:h-[24rem] h-72 ">
                 <div className="relative w-full h-full">
                   <Image src={product4Image} layout="fill" objectFit="cover" />
 
@@ -916,8 +920,8 @@ const Index = () => {
               </div>
             </div>
 
-            <div className="w-[25%] px-3 pb-6 mb-8 hover:shadow-xl">
-              <div className="lg:h-[24rem] md:h-72 ">
+            <div className="w-[50%] md:w-[25%] px-3 pb-6 mb-8 hover:shadow-xl">
+              <div className="lg:h-[24rem] h-72 ">
                 <div className="relative w-full h-full">
                   <Image src={product5Image} layout="fill" objectFit="cover" />
 
@@ -949,8 +953,8 @@ const Index = () => {
               </div>
             </div>
 
-            <div className="w-[25%] px-3 pb-6 mb-8 hover:shadow-xl">
-              <div className="lg:h-[24rem] md:h-72 ">
+            <div className="w-[50%] md:w-[25%] px-3 pb-6 mb-8 hover:shadow-xl">
+              <div className="lg:h-[24rem] h-72 ">
                 <div className="relative w-full h-full">
                   <Image src={product6Image} layout="fill" objectFit="cover" />
 
@@ -982,8 +986,8 @@ const Index = () => {
               </div>
             </div>
 
-            <div className="w-[25%] px-3 pb-6 mb-8 hover:shadow-xl">
-              <div className="lg:h-[24rem] md:h-72 ">
+            <div className="w-[50%] md:w-[25%] px-3 pb-6 mb-8 hover:shadow-xl">
+              <div className="lg:h-[24rem] h-72 ">
                 <div className="relative w-full h-full">
                   <Image src={product7Image} layout="fill" objectFit="cover" />
 
@@ -1015,8 +1019,8 @@ const Index = () => {
               </div>
             </div>
 
-            <div className="w-[25%] px-3 pb-6 mb-8 hover:shadow-xl">
-              <div className="lg:h-[24rem] md:h-72 ">
+            <div className="w-[50%] md:w-[25%] px-3 pb-6 mb-8 hover:shadow-xl">
+              <div className="lg:h-[24rem] h-72 ">
                 <div className="relative w-full h-full">
                   <Image src={product8Image} layout="fill" objectFit="cover" />
 
@@ -1051,7 +1055,7 @@ const Index = () => {
         </Container>
       </div>
 
-      <div className="lg:py-24 md:py-16 text-center">
+      <div className="lg:py-24 py-16 text-center">
         <div className="text-yellow-text mb-2 lg:text-xl md:text-lg">
           FOLLOW US ON INSTAGRAM
         </div>

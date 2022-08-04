@@ -1,5 +1,5 @@
 import axios, { AxiosRequestConfig } from "axios";
-import { getRefreshToken, getToken, setRefreshToken } from "src/Utils";
+import { getRefreshToken, getToken, setRefreshToken } from "src/helpers";
 
 // config axios
 const axiosClient = axios.create({
