@@ -1,4 +1,3 @@
-import { useRouter } from "next/router";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper";
 
@@ -31,8 +30,6 @@ import { Header } from "@/layouts/Header";
 import { Icon } from "@/components/Image";
 
 const Index = () => {
-  const router = useRouter();
-
   return (
     <Layout
       meta={
