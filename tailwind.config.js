@@ -17,6 +17,7 @@ module.exports = {
     extend: {
       colors: {
         "yellow-100": "rgb(255, 229, 149, 0.6)",
+        "yellow-900": "#fcbb02",
         "yellow-base": "#ffe595",
         "yellow-text": "#ffe196",
         "violet": "#f9f8f8",

@@ -4,7 +4,7 @@ import { Pagination } from "swiper";
 import { Meta } from "@/layouts/Meta";
 import { Layout } from "@/layouts/Layout";
 
-import BannerImage from "public/assets/images/jpg/banner3.jpg";
+import bannerImage from "public/assets/images/jpg/banner3.jpg";
 import banner4Image from "public/assets/images/jpg/banner4.jpg";
 import banner5Image from "public/assets/images/jpg/banner5.jpg";
 
@@ -28,6 +28,7 @@ import Image from "next/image";
 import { Container } from "@/layouts/Container";
 import { Header } from "@/layouts/Header";
 import { Icon } from "@/components/Image";
+import Link from "next/link";
 
 const Index = () => {
   return (
@@ -38,13 +39,14 @@ const Index = () => {
           description="Next js Boilerplate is the perfect starter code for your project. Build your React application with the Next.js framework."
         />
       }
+      hasHeader={false}
     >
       <div className="relative h-full-screen">
-        <div className="absolute w-full z-10">
+        <Image src={bannerImage} layout="fill" objectFit="cover" />
+
+        <div className="absolute w-full">
           <Header />
         </div>
-
-        <Image src={BannerImage} layout="fill" objectFit="cover" />
 
         <Container>
           <div className="flex flex-col justify-between w-3/5 md:w-1/2 lg:w-1/3 absolute top-[50%] -translate-y-1/2">
@@ -402,6 +404,14 @@ const Index = () => {
                 </span>
               </div>
             </div>
+          </div>
+
+          <div className="flex justify-center">
+            <Link href="/products">
+              <button className=" bg-yellow-base px-14 py-4 font-medium">
+                SEE ALL
+              </button>
+            </Link>
           </div>
         </Container>
       </div>
@@ -769,6 +779,14 @@ const Index = () => {
               </div>
             </div>
           </div>
+
+          <div className="flex justify-center">
+            <Link href="/products">
+              <button className=" bg-yellow-base px-14 py-4 font-medium">
+                SEE ALL
+              </button>
+            </Link>
+          </div>
         </Container>
       </div>
 
@@ -1049,6 +1067,14 @@ const Index = () => {
               </div>
             </div>
           </div>
+
+          <div className="flex justify-center">
+            <Link href="/products">
+              <button className=" bg-yellow-base px-14 py-4 font-medium">
+                SEE ALL
+              </button>
+            </Link>
+          </div>
         </Container>
       </div>
 
@@ -1072,7 +1098,7 @@ const Index = () => {
               slidesPerView: 5,
             },
           }}
-          className="mySwiper"
+          className="swiper-home"
         >
           <SwiperSlide>
             <div className="relative h-[170px] w-full">
