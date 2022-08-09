@@ -1,8 +1,25 @@
 import { Container } from "@/layouts/Container";
 import { Layout } from "@/layouts/Layout";
 import { Meta } from "@/layouts/Meta";
+import { useRouter } from "next/router";
+import { useEffect } from "react";
+import Link from "next/link";
 
-const Profile = () => {
+const Profile = ({
+  children,
+}: {
+  children: JSX.Element[] | JSX.Element | string;
+}) => {
+  const router = useRouter();
+
+  console.log(router);
+
+  useEffect(() => {
+    if (router.pathname === "/profile") {
+      router.push("/profile/info");
+    }
+  }, []);
+
   return (
     <Layout
       meta={
@@ -13,63 +30,51 @@ const Profile = () => {
       }
       hasHeader={true}
     >
-      <div className="lg:py-24 py-16">
+      <div className="lg:py-24 py-16 border-t-2 border-b-2 ">
         <Container>
-          <div className="flex justify-between">
-            <div className="w-2/5 px-10 -mx-10">
-              <div className="text-3xl mb-2 font-medium">Nguyễn Duy Hoàn</div>
+          <div className="md:flex justify-between">
+            <div className="md:w-2/5 px-10 -mx-10 border-r-2 border-gray-400">
+              <div className="text-3xl mb-6 font-medium">Nguyễn Duy Hoàn</div>
 
-              <div className="border-2 border-gray-800 px-5 py-2 text-xl rounded-xl my-4">
-                Thông tin cá nhân
-              </div>
+              <Link href="/profile/info">
+                <div
+                  className={`cursor-pointer border-2 border-gray-800 px-5 py-2 text-xl rounded-xl my-4 ${
+                    router.pathname === "/profile/info" && "bg-black text-white"
+                  }`}
+                >
+                  Thông tin cá nhân
+                </div>
+              </Link>
 
-              <div className="border-2 border-gray-800 px-5 py-2 text-xl rounded-xl my-4">
-                Danh sách đơn hàng
-              </div>
+              <Link href="/profile/orders">
+                <div
+                  className={`cursor-pointer border-2 border-gray-800 px-5 py-2 text-xl rounded-xl my-4 ${
+                    router.pathname === "/profile/orders" &&
+                    "bg-black text-white"
+                  }`}
+                >
+                  Danh sách đơn hàng
+                </div>
+              </Link>
 
-              <div className="border-2 border-gray-800 px-5 py-2 text-xl rounded-xl my-4">
-                Đánh Giá
+              <Link href="/profile/reviews">
+                <div
+                  className={`cursor-pointer border-2 border-gray-800 px-5 py-2 text-xl rounded-xl my-4 ${
+                    router.pathname === "/profile/reviews" &&
+                    "bg-black text-white"
+                  }`}
+                >
+                  Đánh Giá
+                </div>
+              </Link>
+
+              <div className="cursor-pointer border-2 border-gray-800 px-5 py-2 text-xl rounded-xl my-4 ">
+                Thoát
               </div>
             </div>
 
-            <div className="w-3/5">
-              <div className="text-3xl mb-2 font-medium">
-                Thông tin tài khoản
-              </div>
-              <div className="flex items-center mb-6">
-                <div className="w-1/3 text-lg">Họ Tên</div>
-                <div className="w-2/3">
-                  <input className="border border-gray-400 px-5 py-2 w-full rounded-lg" />
-                </div>
-              </div>
-
-              <div className="flex items-center mb-6">
-                <div className="w-1/3 text-lg">Email</div>
-                <div className="w-2/3">
-                  <input className="border border-gray-400 px-5 py-2 w-full rounded-lg" />
-                </div>
-              </div>
-
-              <div className="flex items-center mb-6">
-                <div className="w-1/3 text-lg">Số điện thoại</div>
-                <div className="w-2/3">
-                  <input className="border border-gray-400 px-5 py-2 w-full rounded-lg" />
-                </div>
-              </div>
-
-              <div className="flex items-center mb-6">
-                <div className="w-1/3 text-lg">Địa chỉ</div>
-                <div className="w-2/3">
-                  <input className="border border-gray-400 px-5 py-2 w-full rounded-lg" />
-                </div>
-              </div>
-
-              <div className="flex items-center mb-6">
-                <div className="w-1/3 text-lg">Họ Tên</div>
-                <div className="w-2/3">
-                  <input className="border border-gray-400 px-5 py-2 w-full rounded-lg" />
-                </div>
-              </div>
+            <div className="min-h-[30vh] md:w-3/5 md:min-h-[70vh]">
+              {children}
             </div>
           </div>
         </Container>
